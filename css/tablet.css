@@ -1,253 +1,256 @@
-@media(max-width:744px) {
+@media(max-width:768px) {
 
-  /* header  */
+    /* header  */
 
-  header {
-      padding: 9px 24px;
-  }
+    header {
+        padding: 9px 24px;
+    }
 
-  .header_nav {
-      top: 93px;
-  }
+    .header_nav {
+        top: 68px;
+    }
 
-  .logo_div {
-      display: flex;
-      flex-direction: column;
-  }
+    .fa-bars {
+        display: block;
+    }
 
-  .logo1 {
-      width: 113px;
-      height: 39px;
-  }
+    .logo_div {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .logo2 {
-      margin-top: -8px;
-      margin-left: 0;
-      width: 101px;
-      height: 39px;
-  }
+    .logo1 {
+        width: 113px;
+        height: 39px;
+    }
 
-  /* section4  */
+    .logo2 {
+        margin-top: -8px;
+        margin-left: 0;
+        width: 101px;
+        height: 39px;
+    }
 
-  .section4 {
-      padding-inline: 24px;
-  }
+    /* section4  */
 
-  /* section6 */
+    .section4 {
+        padding-inline: 24px;
+    }
 
-  .article1_and_article2 {
-      flex-direction: column;
-      gap: 24px;
-  }
+    /* section6 */
 
-  .article1,
-  .article2 {
-      width: 100%;
-  }
+    .article1_and_article2 {
+        flex-direction: column;
+        gap: 24px;
+    }
 
-  /* footer */
+    .article1,
+    .article2 {
+        width: 100%;
+    }
 
-  footer {
-      padding: 24px;
-  }
+    /* footer */
 
-  /* Artwork shop section */
+    footer {
+        padding: 24px;
+    }
 
-  .artwork_shop_section {
-      margin-inline: 24px;
-  }
+    /* Artwork shop section */
 
-  .arwork_shop_title {
-      font-size: 24px;
+    .artwork_shop_section {
+        margin-inline: 24px;
+    }
 
-  }
+    .arwork_shop_title {
+        font-size: 24px;
 
-  /* contact section */
+    }
 
-  .contact_section {
-      padding-inline: 24px;
-  }
+    /* contact section */
 
-  .contact_section_main_div {
-      width: 100%;
-  }
+    .contact_section {
+        padding-inline: 24px;
+    }
 
-  iframe {
-      width: 100%;
-  }
+    .contact_section_main_div {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
 }
 
 @media(max-width:670px) {
 
-  /* footer  */
+    /* footer  */
 
-  footer {
-      flex-direction: column;
-      align-items: center;
-  }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .help_title,
-  .help_txt1,
-  .help_txt2 {
-      text-align: center;
-  }
+    .help_title,
+    .help_txt1,
+    .help_txt2 {
+        text-align: center;
+    }
 
-  .footer_logo {
-      margin-top: 32px;
-      margin-bottom: 32px;
-  }
+    .footer_logo {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
 
-  .contact_main_div {
-      display: flex;
-      column-gap: 24px;
-  }
+    .contact_main_div {
+        display: flex;
+        column-gap: 24px;
+    }
 
-  .contact_txt {
-      display: none;
-  }
+    .contact_txt {
+        display: none;
+    }
 
-  /* Artworks background image section */
-  .artwork_form_input {
-      width: 235px;
-  }
+    /* Artworks background image section */
+    .artwork_form_input {
+        width: 235px;
+    }
 
-  .artwork_background_title {
-      font-size: 32px;
-  }
+    .artwork_background_title {
+        font-size: 32px;
+    }
 }
 
 @media(max-width:585px) {
 
-  /* background image section */
-  .background_section_div {
-      margin-inline: 20px;
-  }
+    /* background image section */
+    .background_section_div {
+        margin-inline: 20px;
+    }
 
-  .background_section_title {
-      font-size: 24px;
-  }
+    .background_section_title {
+        font-size: 24px;
+    }
 
-  /* section3  */
-  .section3 {
-      padding-top: 40px;
-      padding-bottom: 40px;
-  }
+    /* section3  */
+    .section3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-  .section3_title {
-      margin-bottom: 20px;
-  }
+    .section3_title {
+        margin-bottom: 20px;
+    }
 
-  .section3_div1,
-  .section3_main_div {
-      gap: 20px;
-  }
+    .section3_div1,
+    .section3_main_div {
+        gap: 20px;
+    }
 
-  .section3_picture5 {
-      display: none;
-  }
+    .section3_picture5 {
+        display: none;
+    }
 
-  .section3_picture1,
-  .section3_picture2,
-  .section3_picture3 {
-      width: 100%;
-      height: 240px;
-  }
+    .section3_picture1,
+    .section3_picture2,
+    .section3_picture3 {
+        width: 100%;
+    }
 
-  /* Artwork shop section */
+    /* Artwork shop section */
 
-  .artwork_shop_section {
-      margin-top: 64px;
-      margin-bottom: 64px;
-  }
+    .artwork_shop_section {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
 
-  .shop_cards_div {
-      flex-direction: column;
-      width: 100%;
-  }
+    .shop_cards_div {
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .shop_cards {
-      width: 100%;
-  }
+    .shop_cards {
+        width: 100%;
+    }
 
-  .active4,
-  .active5,
-  .active6 {
-      display: none;
-  }
+    .active4,
+    .active5,
+    .active6 {
+        display: none;
+    }
 
-  /* contact background image section */
+    /* contact background image section */
 
-  .contact_form {
-      left: 24px;
-  }
+    .contact_form {
+        left: 24px;
+    }
 }
 
 @media(max-width:500px) {
 
-  /* second background section  */
+    /* second background section  */
 
-  .form_title {
-      font-size: 24px;
-      text-align: center;
-  }
+    .form_title {
+        font-size: 24px;
+        text-align: center;
+    }
 
-  .section5_form_input {
-      width: 230px;
-  }
+    .section5_form_input {
+        width: 230px;
+    }
 
-  /* Artwork shop section */
+    /* Artwork shop section */
 
-  .arwork_shop_title {
-      font-size: 16px;
-  }
+    .arwork_shop_title {
+        font-size: 16px;
+    }
 
-  .artwork_shop_button {
-      padding: 8px;
-      font-size: 16px;
-  }
+    .artwork_shop_button {
+        padding: 8px;
+        font-size: 16px;
+    }
 
-  .artwork_shop_page_numbers {
-      width: 40px;
-      height: 40px;
-  }
+    .artwork_shop_page_numbers {
+        width: 40px;
+        height: 40px;
+    }
 
-  /* contact background image section */
+    /* contact background image section */
 
-  .contact_background_image_section {
-      height: 560px;
-  }
+    .contact_background_image_section {
+        height: 560px;
+    }
 
-  .contact_form {
-      left: 16px;
-      top: 128px;
-      width: calc(432 / 480 * 100%);
-  }
+    .contact_form {
+        left: 16px;
+        top: 128px;
+        width: calc(432 / 480 * 100%);
+    }
 
-  .contact_form_title {
-      font-size: 32px;
-  }
+    .contact_form_title {
+        font-size: 32px;
+    }
 
-  .fullname_and_email_form_div {
-      column-gap: 20px;
-  }
+    .fullname_and_email_form_div {
+        column-gap: 20px;
+    }
 
-  .fullname_and_email {
-      width: 100%;
-  }
+    .fullname_and_email {
+        width: 100%;
+    }
 
-  /* contact section */
-  
-  .contact_section {
-      padding-top: 64px;
-      padding-bottom: 64px;
-  }
+    /* contact section */
 
-  .contact_title {
-      margin: 0;
-      font-size: 32px;
-  }
+    .contact_section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
 
-  .adress_div {
-      margin: 24px 30px;
-  }
+    .contact_title {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .adress_div {
+        margin: 24px 30px;
+    }
 }

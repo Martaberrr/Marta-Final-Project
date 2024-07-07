@@ -23,6 +23,9 @@ header {
   z-index: 1;
 }
 
+.burger_menu{
+  display: none;
+}
 .fa-xmark {
   display: none;
   color: #ffffff;
@@ -151,19 +154,20 @@ header {
 .background_section_button:hover {
   scale: 1.25;
   box-shadow:
-      1px 1px 2px darkblue,
-      inset 1px 1px 2px darkblue;
+    1px 1px 2px darkblue,
+    inset 1px 1px 2px darkblue;
 }
 
 /* section2  */
 
-.picture1_div{
+.picture1_div {
   cursor: pointer;
 }
 
-.images_section2{
+.images_section2 {
   width: 100%;
 }
+
 
 .section2 {
   margin-top: 160px;
@@ -176,7 +180,9 @@ header {
 
 .section2_2_picture {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section2_pictures_text {
@@ -223,7 +229,8 @@ header {
 .section3_div1,
 .section3_div2 {
   display: flex;
-  column-gap: 40px;
+  flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
 
 }
@@ -235,7 +242,7 @@ header {
 }
 
 .section3_pictures {
-  object-fit: top;
+  object-position: top;
 }
 
 /* section4  */
@@ -396,11 +403,11 @@ header {
 
 @keyframes BUTTON2 {
   0% {
-      color: #FFFFFF;
+    color: #FFFFFF;
   }
 
   100% {
-      color: #402101;
+    color: #402101;
   }
 }
 
@@ -785,7 +792,7 @@ footer {
 
 .contact_section_main_div {
   padding-left: 20px;
-  background-color:rgb(229, 169, 140);
+  background-color: rgb(229, 169, 140);
 }
 
 .contact_title {

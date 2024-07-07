@@ -6,7 +6,7 @@
   }
 
   .header_nav {
-      top: 91px;
+      top: 68px;
   }
 
   .logo1 {
@@ -120,7 +120,7 @@
 
 @media(max-width:380px) {
 
-  /* Artwork shop section */
+ 
 
   .artwork_shop_section {
       margin-inline: 20px;
