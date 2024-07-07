@@ -13,27 +13,28 @@ header {
   justify-content: space-between;
   background: orange;
   opacity: 0.8;
-  position: fixed;
-  max-width: inherit;
-  width: inherit;
-  left: 50%;
-  transform: translateX(-50%);
+  position: sticky;
+  width: 100%;
   top: 0;
   backdrop-filter: blur(8px);
   z-index: 1;
 }
 
-.burger_menu{
+.burger_menu {
   display: none;
+  width: 24px;
 }
+
 .fa-xmark {
   display: none;
   color: #ffffff;
   font-size: 32px;
+  width: 24px;
 }
 
 .fa-bars {
   display: none;
+  width: 24px;
 }
 
 .fa-solid:hover {
@@ -51,6 +52,7 @@ header {
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  font-style: medium;
   line-height: 22px;
   color: #FFFFFF;
 }
@@ -114,9 +116,10 @@ header {
 }
 
 .background_section_title {
-  font-family: "Ga Maamli", sans-serif;
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   line-height: 48px;
   font-size: 40px;
   color: darkblue;
@@ -126,8 +129,7 @@ header {
 .background_section_text {
   margin-top: 16px;
   margin-bottom: 56px;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Macondo", cursive;
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
@@ -153,9 +155,11 @@ header {
 
 .background_section_button:hover {
   scale: 1.25;
-  box-shadow:
-    1px 1px 2px darkblue,
+  -webkit-box-shadow: 1px 1px 2px darkblue,
     inset 1px 1px 2px darkblue;
+  box-shadow: 1px 1px 2px darkblue,
+    inset 1px 1px 2px darkblue;
+
 }
 
 /* section2  */
@@ -198,6 +202,7 @@ header {
 
 .picture1_div:hover {
   scale: 1.05;
+  -webkit-box-shadow: 1px 1px 8px orange, -1px -1px 8px orange;
   box-shadow: 1px 1px 8px orange, -1px -1px 8px orange;
   border-radius: 10px;
 }
@@ -228,8 +233,8 @@ header {
 
 .section3_div1,
 .section3_div2 {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   justify-content: center;
 
@@ -238,6 +243,7 @@ header {
 .section3_pictures:hover {
   border-radius: 10px;
   scale: 1.01;
+  -webkit-box-shadow: 0 0 10px #b6814d;
   box-shadow: 0 0 10px #b6814d;
 }
 
@@ -302,10 +308,10 @@ header {
 
 .section6_title {
   margin-bottom: 40px;
-  font-family: "Playwrite US Modern", cursive;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   font-size: 36px;
   line-height: 44px;
   color: darkblue;
@@ -390,6 +396,7 @@ header {
   background-color: darkblue;
   border: none;
   border-radius: 10px;
+  -webkit-animation: BUTTON2 infinite 2s;
   animation: BUTTON2 infinite 2s;
   cursor: pointer;
   transition: 1s;
@@ -398,7 +405,22 @@ header {
 
 .help_center_button:hover {
   scale: 1.07;
+  -webkit-box-shadow: 0 0 5px #a67468;
   box-shadow: 0 0 5px #a67468;
+}
+
+@-webkit-keyframes BUTTON2 {
+  0% {
+    color: #FFFFFF;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  100% {
+    color: #ffffff;
+  }
 }
 
 @keyframes BUTTON2 {
@@ -406,8 +428,12 @@ header {
     color: #FFFFFF;
   }
 
+  50% {
+    color: orange;
+  }
+
   100% {
-    color: #402101;
+    color: #ffffff;
   }
 }
 
@@ -426,7 +452,7 @@ footer {
   margin-bottom: 8px;
   font-family: Rubik, sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font: italic;
   line-height: 19px;
   color: #FFFFFF;
   cursor: pointer;
@@ -438,7 +464,7 @@ footer {
   margin-bottom: 32px;
   font-family: Rubik, sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font: italic;
   line-height: 19px;
   color: #FFFFFF;
   cursor: pointer;
@@ -485,206 +511,6 @@ footer {
   scale: 1.5;
 }
 
-/* Artworks background image section  */
-
-.artwork_background {
-  background-image: url(../images/Rectangle\ 107.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 560px;
-}
-
-.artwork_background_div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.artwork_background_title {
-  margin-bottom: 47px;
-  font-family: "Bodoni Moda SC", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.artwork_form {
-  display: flex;
-}
-
-.artwork_form_input {
-  width: 408px;
-  padding: 16px;
-  outline: none;
-  border: 2px solid #D5906E;
-  border-radius: 10px 0 0 10px;
-  background-color: transparent;
-  color: #FFFFFF;
-}
-
-.artwork_form_input::placeholder {
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: rgba(213, 144, 110, 0.52);
-
-}
-
-.artwork_background_button {
-  width: 180px;
-  padding: 15px 53px;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  background-color: #D5906E;
-  color: #FFFFFF;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-
-}
-
-.artwork_background_button:hover {
-  color: #402101;
-  font-weight: 800;
-}
-
-/* Artwork shop section */
-
-.artwork_shop_section {
-  margin-top: 160px;
-  margin-bottom: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.artwork_shop_top_div {
-  margin-bottom: 72px;
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.artwork_shop_title {
-  font-family: Inter, sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 48px;
-  color: #623932;
-
-}
-
-.shop_cards_div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-
-.shop_cards:hover {
-  scale: 1.05;
-
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.artwork_shop_button {
-  padding: 8px 21px;
-  border: 2px solid #B53B1B;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
-  background-color: transparent;
-  font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  color: #402101;
-
-}
-
-.artwork_shop_button:hover {
-  scale: 1.06;
-}
-
-.shop_cards_text {
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 19px;
-  color: #B53B1B;
-
-}
-
-.shop_cards_price_div {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-}
-
-.shop_cards_price {
-  font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  color: #402101;
-
-}
-
-.fa-cart-plus {
-  padding: 6.67px;
-  font-size: 26.67px;
-  border-radius: 5px;
-  background: rgba(213, 144, 110, 0.3);
-  color: #402101;
-}
-
-.fa-cart-plus:hover {
-  box-shadow: 0 0 5px #623932;
-}
-
-.artwork_shop_pages {
-  margin-top: 96px;
-  display: flex;
-}
-
-.artwork_shop_page_numbers {
-  width: 56px;
-  height: 56px;
-  border: 2px solid #B53B1B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #402101;
-
-}
-
-.active3 {
-  background-color: #B53B1B;
-  color: #FFFFFF;
-}
-
 /* contact background image section */
 
 .contact_background_image_section {
@@ -706,6 +532,7 @@ footer {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   background: rgba(75, 55, 35, 0.73);
+  -webkit-box-shadow: -1px -1px 4px 0px rgba(255, 255, 255, 1);
   box-shadow: -1px -1px 4px 0px rgba(255, 255, 255, 1);
 
 }
